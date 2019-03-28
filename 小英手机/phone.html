@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        /*导航栏*/
+        .top{
+            width:100%;
+            height:130px;
+            background:white;
+            position: fixed;
+            top: 0;
+            z-index: 10000;
+        }
+
+        /*导航栏左边图标*/
+        .topLeft{
+            float: left;
+            margin-left: 40px;
+            margin-top: 33px;
+        }
+
+        /*导航栏右边图标*/
+        .topRight{
+            float: right;
+            margin-right: 40px;
+            margin-top: 48px;
+        }
+
+        /*最下层div*/
+        .content {
+            margin-top: 130px;
+
+        }
+
+        /*个人信息最外层div*/
+        .topContent {
+            position: relative;
+        }
+
+        /*头部div*/
+        .headBack {
+
+            background: #2f2f2f;
+            height: 650px;
+            width: 100%;
+            margin-top: 130px;
+        }
+
+        /*头像*/
+        .headImage {
+            position: absolute;
+            right: 50px;
+
+        }
+
+        /*头像左边白色方框*/
+        .headLeftWhite {
+            position: absolute;
+            margin-top: 38px;
+
+        }
+
+        /*头像左边蓝色横线*/
+        .headLeftBlue {
+            position: absolute;
+            left: 230px;
+            top: 190px;
+        }
+
+        /*头像右边红色横线*/
+        .headRightRed {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+
+        /*头像下面点点点方框*/
+        .blackDot {
+            float: right;
+            margin-right: 215px;
+            margin-top: 28px;
+        }
+
+        /*个人信息下面的白框*/
+        .infoWhite {
+            position: absolute;
+            box-shadow: #666 0px 0px 10px;
+            width: 470px;
+            height: 490px;
+            background: white;
+            left: 210px;
+            top: 380px;
+
+        }
+
+        /*hey图片*/
+        .heyStyle {
+            position: relative;
+            left:50px;
+            top: 40px;
+        }
+
+        /*hey下面的横线*/
+        .heyLineStyle {
+            position: relative;
+            background: #ff54a4;
+            width: 40px;
+            height: 6px;
+            left:50px;
+            top: 40px;
+        }
+
+        /*名字*/
+        .name_style {
+            position: relative;
+            color: #ff54a4;
+            font-size: 26px;
+            left:50px;
+            top: 50px;
+        }
+
+        /*职位*/
+        .position_style {
+            position: relative;
+            color: #ff54a4;
+            font-size: 20px;
+            left: 80px;
+            top: 50px;
+        }
+
+        /*性别 学历 工作经验*/
+        .sex_style {
+            position: relative;
+            background: #ff54a4;
+            color: white;
+            font-size: 20px;
+            left: 50px;
+            top: 65px;
+            width: 420px;
+        }
+
+        /*学校*/
+        .school_style {
+            position: relative;
+            color: #ff54a4;
+            font-size: 20px;
+            left: 50px;
+            top: 100px;
+        }
+
+        /*专业*/
+        .professional_style {
+            position: relative;
+            color: #ff54a4;
+            font-size: 20px;
+            left: 50px;
+            top: 110px;
+        }
+
+        /*手机*/
+        .phone_style {
+            position: relative;
+            color: #ff54a4;
+            font-size: 20px;
+            left: 50px;
+            top: 120px;
+        }
+
+        /*邮箱*/
+        .email_style {
+            position: relative;
+            color: #ff54a4;
+            font-size: 20px;
+            left: 50px;
+            top: 130px;
+        }
+
+        /*图标*/
+        .icon_style {
+            position: relative;
+            top: 5px;
+        }
+
+        /*带点点点的白色正方形*/
+        .workIcon_style {
+            margin-left: 150px;
+            margin-top: 280px;
+            float: left;
+        }
+
+        /*projects文字*/
+        .projects_style {
+            font-size: 76px;
+            font-weight: 900;
+            float: right;
+            margin-top: 60px;
+            margin-right: 50px;
+        }
+
+        /*projects下面的横线*/
+        .projectsLine_style {
+            background: black;
+            height: 10px;
+            width: 40px;
+            margin-top: 20px;
+            margin-left: 354px;
+        }
+
+        /*projects文字*/
+        .projectsText_style {
+            font-size: 36px;
+            font-weight: 500;
+            margin-top: 25px;
+            margin-left: 330px;
+            color: #747474;
+        }
+
+        /*列表图片*/
+        .listImg_style {
+            width:100%;
+            background-repeat:no-repeat ;
+            background-size:100% 100%;
+            background-attachment: fixed;
+        }
+
+        /*contact文字*/
+        .contact_style {
+            font-size: 76px;
+            font-weight: 900;
+            float: left;
+            margin-top: 60px;
+            margin-left: 40px;
+        }
+
+        /*contact下面的横线*/
+        .contactLine_style {
+            background: black;
+            height: 10px;
+            width: 40px;
+            margin-top: 20px;
+            margin-left: 5px;
+
+        }
+
+        /*contact中文文字*/
+        .contactText_style {
+            margin-top: 25px;
+            color: #747474;
+            font-size: 36px;
+            font-weight: 500;
+            margin-left: 0px;
+        }
+
+        /*联系方式图片*/
+        .contactImg_style {
+            float: right;
+            margin-top: 150px;
+        }
+
+        /*存放手机邮箱的div*/
+        .bottomDiv_style {
+            margin-top: 350px;
+            margin-bottom: 150px;
+        }
+
+        /*手机号文字*/
+        .phone_bottom_style {
+            position: relative;
+            font-size: 30px;
+            font-weight: bold;
+            left: 40px;
+        }
+
+        /*邮箱文字*/
+        .email_bottom_style {
+            position: relative;
+            font-size: 30px;
+            font-weight: bold;
+            left: 40px;
+            margin-top: 30px;
+
+        }
+
+        /*图标*/
+        .icon_bottom_style {
+            position: relative;
+            top: 20px;
+        }
+
+    </style>
+
+
+
+    <div class="top">
+        <img class="topLeft" src="手机图片/导航左.png"/>
+        <img class="topRight" src="手机图片/导航右.png"/>
+    </div>
+    <div class="content">
+        <div class="topContent">
+        <div class="headBack">
+            <img class="headImage" src="手机图片/头像.png"/>
+            <img class="headLeftWhite" src="手机图片/头左边长方形白色.png">
+            <img class="headLeftBlue" src="手机图片/头蓝色线条.png"/>
+            <img class="headRightRed" src="手机图片/头红色线条.png"/>
+        </div>
+
+        <img class="blackDot" src="手机图片/黑色点点框.png">
+
+        <div class="infoWhite">
+            <img class="heyStyle" src="手机图片/hey.png">
+            <div class="heyLineStyle"></div>
+            <span class="name_style">段晓英</span>
+            <span class="position_style">UI设计主管</span>
+            <p class="sex_style">&nbsp女   本科   5年工作经验   在职    </p>
+            <p class="school_style">
+                <img class="icon_style" src="手机图片/学校图标.png">
+                兰州商学院（现兰州财大）
+            </p>
+            <p class="professional_style">
+                <img class="icon_style" src="手机图片/专业图标.png">
+                艺术设计专业
+            </p>
+            <p class="phone_style">
+                <img class="icon_style" src="手机图片/手机图标.png">
+                15001130593
+            </p>
+            <p class="email_style">
+                <img src="手机图片/邮箱图标.png">
+                m15001130593@163.com
+            </p>
+        </div>
+
+    </div>
+        <img class="workIcon_style" src="手机图片/作品正方形图标.png">
+        <span class="projects_style">
+            PROJECTS
+            <div class="projectsLine_style"></div>
+            <div class="projectsText_style">作品</div>
+        </span>
+    </div>
+
+    <div>
+    <img class="listImg_style" style="margin-top: 0px" src="手机图片/作品图片.png">
+    <img class="listImg_style" src="手机图片/作品图片.png">
+    <img class="listImg_style" src="手机图片/作品图片.png">
+    <img class="listImg_style" src="手机图片/作品图片.png">
+    </div>
+
+    <div>
+    <span class="contact_style">
+            CONTACT ME
+            <div class="contactLine_style"></div>
+            <div class="contactText_style">联系我</div>
+        </span>
+    </div>
+
+
+    <img class="contactImg_style" src="手机图片/联系我.png">
+
+    <div class="bottomDiv_style">
+        <p class="phone_bottom_style">
+            <img class="icon_bottom_style" src="手机图片/电话图标.png">
+            15001130593
+        </p>
+        <p class="email_bottom_style">
+            <img class="icon_bottom_style" src="手机图片/邮箱图标带圈圈.png">
+            m15001130593@163.com
+        </p>
+    </div>
+
+</head>
+<body>
+
+</body>
+</html>
