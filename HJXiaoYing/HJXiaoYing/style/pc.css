@@ -1,0 +1,785 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #f8f8f8;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    overflow: hidden;
+}
+
+/*第一屏*/
+.one_style {
+    height: 100%;
+    text-align: center;
+    font-size: 0;
+}
+
+/*导航栏*/
+.one_topNav_white_style {
+    background: #f8f8f8;
+    height: 100px;
+    color: #4c4c4c;
+
+}
+
+/*背景*/
+.one_topBack_div_style {
+    position: absolute;
+    height: 60px;
+    left: 25%;
+}
+
+/*图标*/
+.one_logo_style {
+    position: absolute;
+    height: 50px;
+    top: 20px;
+}
+
+/*首页按钮*/
+.one_homeIcon_style {
+    position: absolute;
+    font-size: 12px;
+    font-weight: 400;
+    width: 70px;
+    left: 80px;
+    margin-top: 38px;
+}
+
+/*关于我*/
+.one_guanYuWo_style {
+    position: absolute;
+    font-size: 12px;
+    font-weight: 400;
+    width: 70px;
+    left: 160px;
+    margin-top: 38px;
+}
+
+/*作品*/
+.one_zuoPin_style {
+    position: absolute;
+    font-size: 12px;
+    font-weight: 400;
+    width: 70px;
+    left: 260px;
+    margin-top: 38px;
+}
+
+/*联系我*/
+.one_lianXiWo_style {
+    position: absolute;
+    font-size: 12px;
+    font-weight: 400;
+    width: 70px;
+    left: 350px;
+    margin-top: 38px;
+}
+
+/* 水印 */
+.one_shuiyin_style {
+    height: 100px;
+    position: absolute;
+    right: 0;
+}
+
+/*第一屏左边*/
+.oneLeftDiv_style {
+    position: relative;
+    background: #2f2f2f;
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    text-align: left;
+}
+
+/*第一屏右边*/
+.oneRightDiv_style {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    text-align: left;
+}
+
+/*第一屏头像左边*/
+.oneHeadImg_style {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/*第一屏左边白色方框*/
+.oneWhiteFangkuang_style {
+    position: absolute;
+    left: 10px;
+    bottom: 50px;
+    width: 140px;
+}
+
+/*蓝色横线*/
+.oneBlueLine_style {
+    position: absolute;
+    left: 25%;
+    top: 52%;
+    width: 50px;
+}
+
+/*红色横线*/
+.oneRedLine_style {
+    position: absolute;
+    bottom: 3%;
+    right: -25px;
+    z-index: 100;
+    width: 50px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+/*头像下面点点点方框*/
+.blackDot {
+    position: absolute;
+    left: 100%;
+    bottom: 0;
+    transform: translate(-50%, 20%);
+}
+
+.first-right-wrap {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    padding-left: 70px;
+    background-color: #fff;
+    color: #ff54a4;
+}
+
+/*个人信息下面的白框*/
+.infoWhite {
+    position: absolute;
+    width: 70%;
+    height: 480px;
+    background: white;
+    left: 0px;
+    bottom: 0;
+    margin: auto;
+    top: 30px;
+}
+
+/*hey图片*/
+.heyStyle {
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+
+/*hey下面的横线*/
+.heyLineStyle {
+    background: #ff54a4;
+    width: 40px;
+    height: 6px;
+    margin-bottom: 30px;
+}
+
+/*名字*/
+.name_style {
+    font-size: 26px;
+    margin-right: 10px;
+}
+
+/*职位*/
+.position_style {
+    font-size: 20px;
+}
+
+/*性别 学历 工作经验*/
+.sex_style {
+    background: #ff54a4;
+    color: white;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+/*学校*/
+.school_style {
+    position: relative;
+
+    font-size: 20px;
+    left: 50px;
+    top: 70px;
+}
+
+/*专业*/
+.cell-item {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/*图标*/
+.icon_style {
+    position: relative;
+    top: 5px;
+}
+
+/*个人信息右下角红色横线*/
+.infoRightRed_style {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    width: 50px;
+}
+
+/*个人信息右上角黑色方框*/
+.infoTopRightBlack_style {
+    position: absolute;
+    top: -35px;
+    right: -35px;
+    width: 120px;
+}
+
+/*右下角黑色长方形*/
+.oneRightBottomBlack_style {
+    position: absolute;
+    background: rgb(47, 47, 47);
+    width: 75%;
+    height: 30%;
+    bottom: 0px;
+    right: 0px;
+}
+
+/*-----------------------------*/
+
+/*第二屏*/
+.two_style {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+/*英文头*/
+.two_title_style {
+    padding-top: 20px;
+    margin: 0;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+/*英文下面的横线*/
+.two_titleLine_style {
+    background: black;
+
+    width: 20px;
+    height: 4px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+/*中文头*/
+.two_textTitle_style {
+    margin: 0;
+    color: #8e8e8e;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/*内容*/
+.two_content_style {
+    margin: auto;
+    position: absolute;
+    width: 1000px;
+    height: 530px;
+    background: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/*内容左边的内容*/
+.two_content_left_style {
+    position: absolute;
+    background: #ff54a4;
+    width: 400px;
+    height: 530px;
+    z-index: 100;
+}
+
+/*内容右边的内容*/
+.two_content_Right_style {
+    position: absolute;
+    left: 400px;
+    width: 600px;
+    height: 530px;
+}
+
+/*简书上头像的背景*/
+.two_HeadRightRed_style {
+    position: absolute;
+    left: 200px;
+    height: 100%;
+    width: 200px;
+}
+
+/*简历上的头像*/
+.two_HeadImage_style {
+    height: 100%;
+    width: 200px;
+}
+
+/*头像左边背景div*/
+.two_HeadLeftRed_style {
+    position: absolute;
+    height: 100%;
+    width: 200px;
+    text-align: center;
+}
+
+/*名字*/
+.two_Name_style {
+    font-size: 10px;
+    color: white;
+    font-weight: 500;
+}
+
+/*白色logo*/
+.two_logoWhite_style {
+    width: 45px;
+    height: 45px;
+    margin-top: 90px;
+}
+
+/*designer*/
+.two_designer_style {
+    font-size: 1px;
+    color: white;
+}
+
+/*成为世界上最好的公司*/
+.two_DreamOne_style {
+    position: absolute;
+    bottom: 100px;
+    left: 10px;
+    font-size: 1px;
+    color: white;
+    margin-bottom: -10px;
+}
+
+/*通过创新，在人与品牌之间建立联系*/
+.two_DreamTwo_style {
+    position: absolute;
+    bottom: 60px;
+    left: 7px;
+    font-size: 10px;
+    text-align: left;
+    color: white;
+}
+
+.two_DreamTwo_style .yinhao {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.two_DreamTwo_style .yinhao.fr {
+    float: right;
+}
+
+/*上引号*/
+.two_topYinHao_style {
+    position: absolute;
+    bottom: 35px;
+    left: 10px;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+/*下引号*/
+.two_bottomYinHao_style {
+    position: absolute;
+    bottom: -60px;
+    left: 140px;
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+}
+
+/*至今 第一个div*/
+.two_left_right_one_style {
+    position: absolute;
+    width: 60%;
+    height: 70px;
+    right: 0;
+    top: 20%;
+}
+
+/*line横线*/
+.two_left_right_one_line_style {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #eaeaea;
+}
+
+/*右边菱形*/
+.two_left_right_one_lingXing_style {
+    position: absolute;
+    top: -7px;
+    right: -10px;
+}
+
+/*结束时间*/
+.two_left_right_one_endTime_style {
+    font-size: 20px;
+    font-weight: 800;
+    position: absolute;
+    top: 0px;
+    right: 8px;
+    color: white;
+}
+
+/*开始时间*/
+.two_left_right_one_startTime_style {
+    position: absolute;
+    top: 34px;
+    right: 8px;
+    font-size: 14px;
+    font-weight: 800;
+    color: white;
+}
+
+/*工作经历第二个*/
+.two_left_right_Two_style {
+    position: absolute;
+    width: 60%;
+    height: 70px;
+    right: 0;
+    top: 44%;
+}
+
+/*工作经历第三个*/
+.two_left_right_Three_style {
+    position: absolute;
+    width: 60%;
+    height: 70px;
+    right: 0;
+    top: 73%;
+}
+
+/*简历右边斜杠*/
+.two_right_xieGang_style {
+    position: absolute;
+    left: 60px;
+    top: -15px;
+    height: 50px;
+}
+
+/*简历小斜杠 文字*/
+.two_right_workxperience_text_style {
+    font-size: 18px;
+    font-weight: 800;
+    text-align: right;
+    margin-right: 70px;
+    margin-top: 30px;
+}
+
+/*简历小斜杠 图标小斜杠*/
+.two_right_workxperience_icon_style {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+/*第一个工作经历*/
+.two_right_one_detil_style {
+    position: absolute;
+    text-align: left;
+    top: 20%;
+}
+
+/*简历介绍头*/
+.two_right_one_title_style {
+    position: absolute;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    top: -10px;
+    left: 18px;
+}
+
+/*简历介绍详细内容*/
+.two_right_one_detil_text_style {
+    color: #717171;
+    font-size: 6px;
+    font-weight: 200;
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-left: 18px;
+}
+
+/*第二个工作简历*/
+.two_right_Two_detil_style {
+    position: absolute;
+    text-align: left;
+    top: 44%;
+}
+
+/*第三个工作简历*/
+.two_right_Three_detil_style {
+    position: absolute;
+    text-align: left;
+    top: 73%;
+}
+
+/*工作经历右下角点点点方框*/
+.two_right_dianDianFangKuang_style {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+    height: 90px;
+}
+
+/*第三屏*/
+.three_style {
+    text-align: center;
+}
+
+/*第三屏最外层div*/
+.three_content_style {
+    width: 970px;
+    height: 500px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/*图片作品*/
+.three_content_image_style {
+    width: 33%;
+    height: 49%;
+}
+
+/*查看全部作品*/
+.three_lookAllWorks {
+    font-size: 14px;
+    background: black;
+    color: white;
+    width: 140px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/*第四屏*/
+.four_style {
+    text-align: center;
+}
+
+/*底部内容div*/
+.four_buttom_style {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 260px;
+    background: black;
+}
+
+/*底部背景图片*/
+.four_backImage_style {
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+/*移动端*/
+.four_buttom_App_style {
+    position: absolute;
+    left: 23%;
+    width: 100px;
+    height: 250px;
+    top: 30px;
+}
+
+/*最下面的icon app移动端*/
+.four_buttom_buttom_icon_style {
+    width: 40px;
+}
+
+/*名称 例如移动端*/
+.four_buttom_Name_style {
+    color: #cbcbcb;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/*底部白色线*/
+.four_buttom_Line_style {
+    background: white;
+    height: 1px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+/*底部功能文字 第一排*/
+.four_buttom_content_first_style {
+    margin-top: 14px;
+    color: #828282;
+    font-size: 10px;
+}
+
+/*底部功能文字*/
+.four_buttom_content_style {
+    margin-top: 8px;
+    color: #828282;
+    font-size: 10px;
+}
+
+/*网站平台*/
+.four_buttom_netWeb_style {
+    position: absolute;
+    width: 100px;
+    height: 250px;
+    top: 30px;
+    left: 38%;
+}
+
+/*平台管理*/
+.four_buttom_web_style {
+    position: absolute;
+    width: 100px;
+    height: 250px;
+    top: 30px;
+    right: 38%;
+}
+
+/*其他项目*/
+.four_buttom_other_style {
+    position: absolute;
+    width: 100px;
+    height: 250px;
+    top: 30px;
+    right: 23%;
+}
+
+/*第四屏底部信息*/
+.four_buttom_info_style {
+    position: absolute;
+    background: #f8f8f8;
+    height: 400px;
+    width: 100%;
+    bottom: 250px;
+}
+
+/*联系个人信息视图*/
+.four_buttom_info_style {
+    text-align: left;
+    width: 700px;
+    left: 16%;
+    height: 260px;
+}
+
+/*联系我图片*/
+.four_buttom_contact_style {
+    position: absolute;
+    bottom: 90px;
+    height: auto;
+    width: 187px;
+}
+
+/*个人联系方式背景白色*/
+.four_buttom_infor_white_syle {
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    background: white;
+    left: 160px;
+}
+
+/*个人信息下面的斜线*/
+.four_buttom_infor_xiexian_style {
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    background: white;
+    left: 170px;
+    top: 10px;
+}
+
+/*手机背景*/
+.four_phone_style {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    top: 28px;
+    left: 60px;
+}
+
+/*图标*/
+.four_buttom_icon_style {
+    width: 40px;
+    float: left;
+    margin-right: 5px;
+}
+
+/*电话*/
+.four_buttom_dianhua_style {
+    font-weight: 800;
+}
+
+/*手机phone*/
+.four_buttom_phone_style {
+    font-weight: 400;
+    color: #b3b3b3;
+}
+
+/*手机号码*/
+.four_buttom_number_style {
+    font-weight: 800;
+}
+
+/*邮箱*/
+.four_email_style {
+    position: absolute;
+    width: 220px;
+    height: 50px;
+    top: 28px;
+    left: 260px;
+}
+
+.four_buttom_email_style {
+    color: #b3b3b3;
+}
+
+.two-wrap {
+    position: absolute;
+    bottom: 0;
+    top: 120px;
+    width: 100%;
+}
