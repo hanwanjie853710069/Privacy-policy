@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<head>
+
+    <script type="text/javascript">
+
+        var timer = null;
+        function startMover(itarget){//目标值
+
+
+
+            clearInterval(timer);//执行当前动画同时清除之前的动画
+            var odiv = document.getElementById('hanwanjie');
+
+            console.log(odiv.offsetLeft);
+
+            timer = setInterval(function(){
+                var speed = 0;
+                if(odiv.offsetLeft > itarget){
+                    speed = -1;
+                }
+                else{
+                    speed = 1;
+                }
+                if(odiv.offsetLeft == itarget){
+                        clearInterval(timer);
+                }
+                else{
+                    odiv.style.left = odiv.offsetLeft+speed+'px';
+                }
+
+                console.log(odiv.offsetLeft);
+
+                console.log(odiv.style.left);
+
+            },30);
+        }
+
+       function hanhan() {
+           startMover(200);
+
+        }
+
+    </script>
+</head>
+
+
+<body>
+
+<!--<div id="odiv" style=" position: absolute;background: red; width: 200px; height: 200px"></div>-->
+
+<button style="background: red;width: 300px;height: 300px;position: absolute" type="button" id="hanwanjie" onclick="hanhan()">888888</button>
+
+</body>
+
+</html>
