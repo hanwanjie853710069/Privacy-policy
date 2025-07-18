@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>万色取色器</title>
+  <script src="https://cdn.tailwindcss.com "></script>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    .transition {
+      transition: all 0.3s ease;
+    }
+    .hover\\:scale-105:hover {
+      transform: scale(1.05);
+    }
+    .hover\\:shadow-lg:hover {
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-10">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="text-xl md:text-2xl font-bold text-indigo-600">万色取色器</div>
+      <button class="md:hidden text-gray-600" id="menuToggle">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <nav class="hidden md:flex space-x-6">
+        <a href="#home" class="text-gray-700 hover:text-indigo-600 transition">首页</a>
+        <a href="#why" class="text-gray-700 hover:text-indigo-600 transition">为什么选择我们</a>
+        <a href="#types" class="text-gray-700 hover:text-indigo-600 transition">广告类型</a>
+        <a href="#contact" class="text-gray-700 hover:text-indigo-600 transition">联系我们</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg">
+    <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
+      <a href="#home" class="text-gray-700 hover:text-indigo-600 transition py-1">首页</a>
+      <a href="#why" class="text-gray-700 hover:text-indigo-600 transition py-1">为什么选择我们</a>
+      <a href="#types" class="text-gray-700 hover:text-indigo-600 transition py-1">广告类型</a>
+      <a href="#contact" class="text-gray-700 hover:text-indigo-600 transition py-1">联系我们</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-16 px-4">
+    <div class="container mx-auto text-center">
+      <h1 class="text-3xl md:text-4xl font-bold mb-4">让您的广告触达更多人</h1>
+      <p class="text-lg md:text-xl mb-6 max-w-xl mx-auto">我们提供高曝光的广告位，适合表白、产品推广、活动宣传等多种场景</p>
+      <a href="#contact" class="bg-white text-indigo-600 px-6 py-3 rounded-full text-lg font-medium shadow-md hover:shadow-lg transition hover:scale-105 inline-block">
+        立即合作
+      </a>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section id="why" class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-800">为什么选择我们？</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 mx-auto bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 text-gray-700">高曝光率</h3>
+          <p class="text-gray-600">广告位位于 App 首页核心位置，每日千万级曝光，精准触达目标人群</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 mx-auto bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 text-gray-700">快速上线</h3>
+          <p class="text-gray-600">广告审核通过后，最快1小时内即可上线，快速获得流量支持</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 mx-auto bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 text-gray-700">多种广告形式</h3>
+          <p class="text-gray-600">支持图片、文字、链接等多种广告形式，灵活适配不同推广需求</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ad Types -->
+  <section id="types" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-800">广告类型</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-lg shadow-md p-6 transition hover:shadow-lg">
+          <h3 class="text-xl font-semibold mb-2 text-indigo-600">表白专区</h3>
+          <p class="text-gray-600">用广告位说出你的心意，让TA在App里看到你的专属表白</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 transition hover:shadow-lg">
+          <h3 class="text-xl font-semibold mb-2 text-indigo-600">产品推广</h3>
+          <p class="text-gray-600">适合电商、品牌、服务等各类产品，精准投放，提升转化率</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 transition hover:shadow-lg">
+          <h3 class="text-xl font-semibold mb-2 text-indigo-600">活动宣传</h3>
+          <p class="text-gray-600">线下活动、线上活动、限时优惠等，快速吸引目标人群参与</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 transition hover:shadow-lg">
+          <h3 class="text-xl font-semibold mb-2 text-indigo-600">招聘/交友</h3>
+          <p class="text-gray-600">发布招聘信息、寻找合作伙伴或结交朋友，拓展社交圈</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 transition hover:shadow-lg">
+          <h3 class="text-xl font-semibold mb-2 text-indigo-600">品牌展示</h3>
+          <p class="text-gray-600">提升品牌曝光度，打造品牌影响力，建立用户认知</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 transition hover:shadow-lg">
+          <h3 class="text-xl font-semibold mb-2 text-indigo-600">其他定制</h3>
+          <p class="text-gray-600">如有特殊需求，可提供定制化广告方案，满足个性化需求</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="bg-indigo-600 text-white py-12 px-4">
+    <div class="container mx-auto text-center">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">现在就加入我们，开启广告投放之旅！</h2>
+      <p class="text-lg mb-6 max-w-xl mx-auto">无论你是想表白、推广产品还是宣传品牌，我们都能为你提供高效、精准的广告投放服务</p>
+      <a href="#contact" class="bg-white text-indigo-600 px-6 py-3 rounded-full text-lg font-medium shadow-md hover:shadow-lg transition hover:scale-105 inline-block">
+        立即合作
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-800">联系我们</h2>
+      <div class="max-w-md mx-auto bg-gray-50 rounded-lg shadow-md p-6 text-center">
+        <p class="text-gray-600 mb-4">欢迎通过以下方式与我们联系，我们将尽快回复您</p>
+        <div class="space-y-3 text-gray-700">
+          <p><strong>QQ：</strong>2938358824</p>
+          <p><strong>微信：</strong>ZacharyMiller</p>
+          <p><strong>邮箱：</strong>2938358824@qq.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t">
+    <div class="container mx-auto px-4 py-6">
+      <div class="text-center text-gray-600 text-sm">
+        <p>Copyright © 2020 Grace Han. All Rights Reserved. 保留所有权利。</p>
+        <p class="mt-2">广告位招商 - 快速触达目标人群</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Toggle -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
